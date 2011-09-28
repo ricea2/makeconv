@@ -1,3 +1,4 @@
+#makefile for makeconv
 all: main 
 
 main: main.o bsdMake.o genMake.o ruleList.o rule.o
