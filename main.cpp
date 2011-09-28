@@ -1,4 +1,6 @@
 #include "main.h"
+#define MAIN_CPP
+#include "global.h"
 
 int main(int argc, char* argv[]) {
 	int opt=0;
@@ -60,6 +62,7 @@ int main(int argc, char* argv[]) {
 }
 
 void usage() {
+	cout << "usage ./" << endl;
 	cout << "Makefile Converter" << endl;
 	cout << "\tConverts makefiles into common XML format" << endl;
 }

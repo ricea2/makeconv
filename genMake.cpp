@@ -1,7 +1,11 @@
 #include "genMake.h"
+#include "global.h"
 
 // Print dependency list
 void GenMake::printDeps() { 
+	if(globalArgs.verbose)
+		cout << "Printing Dependencies" << endl;
+
 	string line;
 	if(makeFile.is_open()) {
 		while(makeFile.good()) {
