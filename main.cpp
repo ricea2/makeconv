@@ -58,6 +58,18 @@ int main(int argc, char* argv[]) {
 		cout << "Opened " << globalArgs.makePath << endl;
 
 	mfile->printDeps();
+
+	// Test Rulelist
+	cout << "Testing Rulelist" << endl;
+	RuleList rules;
+	string foo = "foo";
+	string cmd= "cmd";
+	vector<string> bar;
+	bar.push_back("a");
+	bar.push_back("b");
+	rules.addRule(foo,bar ,cmd );
+	rules.print(foo);
+
 	return 0;
 }
 
